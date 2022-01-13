@@ -1,40 +1,20 @@
-$(document).ready(function()
 
-{
-  if (value="Raccoon") {
-  $('Raccoon').show();
-} else {
-  $('Bear').hide();
-}
-});
+function changeAnimal() {
+  $('#raccoonFact').hide();
+  $('#bearFact').hide();
+  $('#wolfFact').hide();
 
 
-//   $("#formAnimals").submit(function() {
-//     event.preventDefault();
-//     const animalOptions = $("#animalOptions").val();
+  const animalOptions = $("#animalOptions").val();
 
-//     if ("#Raccoon") {
-//       $('#raccoonFact').show();
-//       $('#wolfFact', #'bearFact').hide();
-//     } else {
-//       $('#Bear')
-//     }
-//     }
-//   });
+  if (animalOptions==="Raccoon") {
+    $('#raccoonFact').toggle();
+  } else if (animalOptions==="Bear") {
+    $('#bearFact').toggle();
 
+  } else { 
+    (animalOptions==="Wolf")
+    $('#wolfFact').toggle();
+  }
+    }
 
-//     $(#animalOptions).submit(function(event) {
-
-
-
-
-
-//     $("#animalOptions").click(function() {
-//       $("#animalOptions").hide();
-//     });
-
-//     if (".Raccoon") {
-//       $('#wolfFact', "#bearFact").hide();
-//     });
-//   });
-// });
